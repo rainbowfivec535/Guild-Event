@@ -1,0 +1,17 @@
+name: Scheduled Discord Event Reminder
+
+on:
+  schedule:
+    # 4:30 PM ADT every Wednesday = 7:30 PM UTC
+    - cron: '30 19 * * 3'
+
+jobs:
+  post-discord-message:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Send event reminder to Discord
+        run: |
+          curl -H "Content-Type: application/json" \
+          -X POST \
+          -d '{"content": "Hello, The Storms Rain Guild members! Our event is Happening in around 30 minutes, we will be doing the event you all voted for last week!"}' \
+          https://discord.com/api/webhooks/your_webhook_id/your_webhook_token
