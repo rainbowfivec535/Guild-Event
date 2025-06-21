@@ -14,4 +14,4 @@ jobs:
           curl -H "Content-Type: application/json" \
           -X POST \
           -d '{"content": "Hello, The Storms Rain Guild members! Our event is Happening in around 30 minutes, we will be doing the event you all voted for last week!"}' \
-          https://discord.com/api/webhooks/your_webhook_id/your_webhook_token
+          https://discord.com/api/webhooks/1385801724551368919/bSIbxdLo1YeKO78xdyglgOsBkcYKEzCbFMS0j68UF1Hn3UYPoSJcJwVK8dKcL6jqQvx1
